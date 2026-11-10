@@ -1,7 +1,7 @@
 # 全渠道坐席辅助系统 · 前端
 
 面向企业内部坐席的**售前咨询 · 售后处理 · 排班请假 · 协作审批 · 销售分析 · 权限管理**一体化控制台。
-依据 `_refs/` 下的 PRD v2.1、角色首页 IA 与原型视觉（v3 浅色企业后台）实现，全量数据为固定种子生成的**虚构数据**，同时提供 Web 与 Windows 桌面两种运行方式。
+依据 `_refs/` 下的 PRD v2.1、角色首页 IA 与原型视觉（v3 浅色企业后台）实现，全量数据为固定种子生成的**虚构数据**，同时提供 Web 与 Windows 桌面两种运行方式。`_refs/` 为内部需求与原型资料，未纳入版本库，不影响构建与运行。
 
 技术栈：**Vue 3.5 + Element Plus 2.9 + Axios + ECharts 5 + Pinia + Vue Router 4 + Vite 6**；富文本用 **Tiptap 2**（`@tiptap/vue-3` + StarterKit + Image + Placeholder）。
 
@@ -225,7 +225,7 @@ src/
 ├── styles/       # variables.css（设计令牌）、index.css（全局与 EP 覆写）
 ├── utils/        # format / storage / permission（v-perm）/ image（压缩）/ html（清洗）/ emojis（表情分组）
 └── views/        # 28 个后台页面 + customer/CustomerChatView（客户侧窗口）
-_refs/            # PRD v2.1、角色首页 IA、原型 HTML/CSS（视觉依据，不参与构建）
+_refs/            # PRD v2.1、角色首页 IA、原型 HTML/CSS（视觉依据，不参与构建，未纳入版本库）
 ```
 
 ---
