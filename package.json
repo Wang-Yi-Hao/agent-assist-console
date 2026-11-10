@@ -1,0 +1,96 @@
+{
+  "name": "agent-assist-console",
+  "private": true,
+  "version": "2.1.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "description": "全渠道坐席辅助系统 · 售前、售后与协作一体化工作台",
+  "author": {
+    "name": "全渠道坐席辅助系统"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "app:dev": "node electron/dev.cjs",
+    "icon": "node build/make-icon.mjs",
+    "app:dir": "vite build && electron-builder --win --dir",
+    "app:build": "vite build && electron-builder --win",
+    "lint": "eslint . --max-warnings 999",
+    "lint:fix": "eslint . --fix",
+    "lint:style": "stylelint \"src/**/*.{css,vue}\"",
+    "lint:style:fix": "stylelint \"src/**/*.{css,vue}\" --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@eslint/js": "^9.20.0",
+    "@tiptap/extension-image": "^2.27.3",
+    "@tiptap/extension-placeholder": "^2.27.3",
+    "@tiptap/starter-kit": "^2.27.3",
+    "@tiptap/vue-3": "^2.27.3",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "axios": "^1.7.9",
+    "echarts": "^5.6.0",
+    "electron": "^33.4.11",
+    "electron-builder": "^26.0.12",
+    "element-plus": "^2.9.5",
+    "eslint": "^9.20.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.14.0",
+    "pinia": "^2.3.1",
+    "postcss-html": "^1.8.0",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^36.0.1",
+    "vite": "^6.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "build": {
+    "appId": "com.aac.agentassist",
+    "productName": "全渠道坐席辅助系统",
+    "copyright": "Copyright © 2026 全渠道坐席辅助系统",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/main.cjs",
+      "electron/icon.png",
+      "package.json"
+    ],
+    "asar": true,
+    "npmRebuild": false,
+    "afterPack": "electron/afterPack.cjs",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false,
+      "requestedExecutionLevel": "asInvoker",
+      "artifactName": "坐席辅助系统-${version}-安装程序.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "全渠道坐席辅助系统",
+      "uninstallDisplayName": "全渠道坐席辅助系统",
+      "installerLanguages": [
+        "zh_CN"
+      ],
+      "language": "2052",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

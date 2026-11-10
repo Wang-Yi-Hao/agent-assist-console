@@ -1,0 +1,59 @@
+:root {
+  /* 品牌与语义色（对齐设计稿 v3 / 原型 theme.css） */
+  --app-bg: #f4f7fc;
+  --app-card: #fff;
+  --app-border: #e6edf6;
+  --app-border-light: #f0f3f8;
+  --app-text-1: #16263b;
+  --app-text-2: #33465f;
+  --app-text-3: #667a94;
+  --app-text-4: #9aaac0;
+  --app-primary: #409eff;
+  --app-primary-deep: #1f63b8;
+  --app-primary-bg: #ecf5ff;
+  --app-primary-border: #d5e7ff;
+  --app-success: #2ea37a;
+  --app-success-bg: #eaf7f1;
+  --app-warning: #d98b0b;
+  --app-warning-bg: #fff6e5;
+  --app-warning-border: #f5deb8;
+  --app-danger: #d9534f;
+  --app-danger-bg: #fdeded;
+
+  /* 涨跌色：A 股习惯，涨红跌绿 */
+  --app-up: #d9534f;
+  --app-down: #2ea37a;
+
+  /* 尺寸 */
+  --app-radius: 8px;
+  --app-radius-sm: 6px;
+  --app-header-h: 56px;
+  --app-side-w: 220px;
+  --app-side-w-collapsed: 64px;
+  --app-font: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  --app-shadow: 0 1px 2px rgb(22 38 59 / 4%);
+  --app-shadow-hover: 0 6px 18px rgb(64 158 255 / 12%);
+
+  /* Element Plus 主题对齐 */
+  --el-color-primary: #409eff;
+  --el-color-primary-light-3: #79bbff;
+  --el-color-primary-light-5: #a0cfff;
+  --el-color-primary-light-7: #c6e2ff;
+  --el-color-primary-light-8: #d9ecff;
+  --el-color-primary-light-9: #ecf5ff;
+  --el-color-primary-dark-2: #1f63b8;
+  --el-color-success: #2ea37a;
+  --el-color-warning: #d98b0b;
+  --el-color-danger: #d9534f;
+  --el-color-error: #d9534f;
+  --el-color-info: #667a94;
+  --el-border-radius-base: 6px;
+  --el-border-color: #e6edf6;
+  --el-border-color-light: #f0f3f8;
+  --el-text-color-primary: #16263b;
+  --el-text-color-regular: #33465f;
+  --el-text-color-secondary: #667a94;
+  --el-text-color-placeholder: #9aaac0;
+  --el-font-family: var(--app-font);
+  --el-font-size-base: 13px;
+}
